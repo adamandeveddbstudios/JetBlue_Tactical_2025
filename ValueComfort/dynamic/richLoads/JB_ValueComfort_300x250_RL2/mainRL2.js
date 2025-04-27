@@ -122,6 +122,9 @@ function setupContent() {
     // ------------------
     // TESTING
 
+    origin_formatted = 'Xxxx'
+    destination_formatted = 'Yyyy'
+
     //  Longest possible places names
   
     //  Longest possible places names

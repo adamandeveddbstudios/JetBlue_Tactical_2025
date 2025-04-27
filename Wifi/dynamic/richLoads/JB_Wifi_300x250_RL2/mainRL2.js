@@ -123,8 +123,8 @@ function setupContent() {
     // TESTING
 
     //  Longest possible places names
-    // origin_formatted = 'Boston'
-    // destination_formatted = 'Florida'
+    origin_formatted = 'Xxxx'
+    destination_formatted = 'Yyyy'
 
     //  Longest possible places names
     // origin_formatted = 'Providenciales, Turks and Caicos (PLS)'

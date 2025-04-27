@@ -77,8 +77,8 @@ function setupContent() {
     // TESTING
 
     //  Longest possible places names
-    // origin_formatted = 'Xxxx'
-    // destination_formatted = 'Yyyy'
+    origin_formatted = 'Xxxx'
+    destination_formatted = 'Yyyy'
 
     //  Longest possible places names
     // origin_formatted = 'Providenciales, Turks and Caicos (PLS)'

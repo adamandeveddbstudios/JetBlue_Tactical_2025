@@ -20,7 +20,7 @@ video {
 #main_container {
   position: absolute;
   background-color: #0000aa;
-  /* border: 1px solid #000000; */
+  border: 1px solid #000000;
   overflow: hidden;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

@@ -110,10 +110,8 @@ function animate() {
   .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
 
-  // Duration of entire timeline
   const totalDuration = tl.duration() + 2;
-  // Plane animation running for entire duration
-  tl.fromTo("#plane", totalDuration, { x: "-107px" }, { x: "0", ease: Power0.easeNone }, 0)
+  tl.fromTo("#plane", totalDuration, { x: "-20px" }, { x: "105px", ease: Power1.easeOut }, 0)
 
   .addLabel('frame_END', "frame2+=6")
   .to("#term2", {autoAlpha: 0,}, 'frame_END')

@@ -81,8 +81,8 @@ video {
 #text_holder {
   color: #0000aa;
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 44.5px;
-  line-height: 47px;
+  font-size: 46.2px;
+  line-height: 47.7px;
   letter-spacing: -1px;
 }
 #h1,
@@ -90,12 +90,12 @@ video {
 #h3 {
   width: 300px;
   left: 15px;
-  top: 162px;
+  top: 107px;
 }
 #h2{
-  top: 192px;
+  top: 138px;
   font-size: 30px;
-  line-height: 35.4px;
+  line-height: 35.6px;
   letter-spacing: -0.7px;
 }
 #h2 span{
@@ -164,5 +164,4 @@ video {
 .window{
   width: 300px;
   height: 600px;
-  z-index: -1;
 }

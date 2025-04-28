@@ -25,17 +25,14 @@ function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
 
   tl.set(['#h1, #h2'], {y:"20px"})
-  // tl2.set('#plane',{x:'-107px'})
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut}, 'frame1+=0.5')
   
   .addLabel('frame2', 'frame1+=4')
   .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
-  // Duration of entire timeline
   const totalDuration = tl.duration() + 2;
-  // Plane animation running for entire duration
-  tl.fromTo("#plane", totalDuration, { x: "-300px" }, { x: "0", ease: Power0.easeNone }, 0);
+  tl.fromTo("#plane", totalDuration, { x: "0" }, { x: "278", ease: Power1.easeOut }, 0);
 }
 
 function setRollover() {

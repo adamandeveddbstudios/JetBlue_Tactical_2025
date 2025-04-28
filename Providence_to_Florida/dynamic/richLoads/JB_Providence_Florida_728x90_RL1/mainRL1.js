@@ -117,7 +117,7 @@ function animate() {
   .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
   const totalDuration = tl.duration() + 2;
-  tl.fromTo("#plane", totalDuration, { x: "-300px" }, { x: "0", ease: Power0.easeNone }, 0);
+  tl.fromTo("#plane", totalDuration, { x: "0" }, { x: "278", ease: Power1.easeOut }, 0);
 
   tl.addLabel('frame_END', 'frame2+=6')    
   

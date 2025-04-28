@@ -34,7 +34,7 @@ function animate() {
   // Duration of entire timeline
   const totalDuration = tl.duration() + 2;
   // Plane animation running for entire duration
-  tl.fromTo("#plane", totalDuration, { x: "-107px" }, { x: "0", ease: Power0.easeNone }, 0);
+  tl.fromTo("#plane", totalDuration, { x: "-10px" }, { x: "100px", ease: Power1.easeOut }, 0);
 }
 
 function setRollover() {

@@ -103,10 +103,10 @@ video {
   line-height: 1;
   vertical-align: super;
   position: relative;
-  top: -5px;
+  top: -3px;
   margin: 0;
+  margin-left: 1px;
   display: inline;
-  left: 1px;
 }
 
 #endframeBg {

@@ -99,11 +99,11 @@ video {
   letter-spacing: 0.1px;
 }
 #h2 sup{
-  font-size: 9px;
+  font-size: 8px;
   line-height: 1;
   vertical-align: super;
   position: relative;
-  top: -7px;
+  top: -4px;
   margin: 0;
   display: inline;
 }

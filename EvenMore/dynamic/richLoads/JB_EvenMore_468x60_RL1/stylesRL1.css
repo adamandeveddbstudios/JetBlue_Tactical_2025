@@ -93,10 +93,19 @@ video {
   top: 11px;
 }
 #h2{
-  top: 11px;
-  font-size: 11px;
-  line-height: 13.2px;
-  letter-spacing: 0.3px;
+  top: 16px;
+  font-size: 12.5px;
+  line-height: 14.5px;
+  letter-spacing: 0.1px;
+}
+#h2 sup{
+  font-size: 7.5px;
+  line-height: 1;
+  vertical-align: super;
+  position: relative;
+  top: 0px;
+  margin: 0;
+  display: inline;
 }
 #h1 .color, #h2 .color{
   color: #00e1ff;

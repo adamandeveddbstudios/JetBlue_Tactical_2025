@@ -164,18 +164,16 @@ video {
 .terms{
   color: #fff;
   font-family: "ESKlarheitGrotesk Smbd";
-  font-size: 7px;
+  font-size: 7.3px;
   line-height: 7px;
   letter-spacing: -0.02em;
-  width: 90px;
-  bottom: 14px;
+  right: 16.5px;
+  width: 200px;
+  bottom: 15px;
   z-index: 11;
-  right: 9px;
+  text-align: right;
 }
 #term2 {
-  font-size: 7px;
-  right: 22px;
-  width: 120px;
   bottom: 5px;
 }
 #term2 sup{

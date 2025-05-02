@@ -94,7 +94,7 @@ function setupContent() {
     // -------------------
 
     if (showDefault) {
-      h4[0].innerHTML = 'Rhode Island, meet<br/>Caribbean Islands.'; // - Populates main headline
+      h4[0].innerHTML = 'Rhode Island, meet<br/>Caribbean islands.'; // - Populates main headline
       h4[0].classList.add('defaultEndframe')
       // reposition CTA
       cta[0].style.marginLeft = 0 

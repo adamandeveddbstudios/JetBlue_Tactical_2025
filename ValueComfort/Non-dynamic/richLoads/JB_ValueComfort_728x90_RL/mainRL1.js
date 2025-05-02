@@ -35,7 +35,7 @@ function animate() {
 
   // Duration of entire timeline
   const totalDuration = tl.duration() + 2;
-  tl.fromTo("#cloud", totalDuration , { x: "150" }, { x: "60", ease: Power0.easeNone }, 0)
+  tl.fromTo("#cloud", totalDuration , { x: "20" }, { x: "130", ease: Power0.easeNone }, 0)
   // Plane animation running for entire duration
 }
 

@@ -33,11 +33,10 @@ function animate() {
   .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
   .to(['#h2, #term2'], 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
 
-  // Duration of entire timeline
   const totalDuration = tl.duration() + 2;
-  // Plane animation running for entire duration
+
   tl.fromTo("#cloud", totalDuration, { x: "30" }, { x: "0", ease: Power0.easeNone }, 0);
-  tl.fromTo("#plane", totalDuration, { x: "-100" }, { x: "0", ease: Power0.easeNone }, 0);
+  tl.fromTo("#plane", totalDuration, { x: "-50" }, { x: "230", ease: Power0.easeNone }, 0);
 }
 
 function setRollover() {

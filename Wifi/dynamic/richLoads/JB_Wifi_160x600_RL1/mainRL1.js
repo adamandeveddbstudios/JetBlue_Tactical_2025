@@ -71,7 +71,7 @@ myFT.on('instantads',function(){
         try {
           /*Setting variable values from loaded feed (FEED PASSED THROUGH THE --theFeedLoaded-- CUSTOM EVENT)*/
           /*For example: the following variable ctURL is used to pass a url from feed into a dynamic clickTag*/
-          ctURL = feedItems[0]['url'];
+          ctURL = checkURL(myFT.instantAds.Retail_dynamic_clickTag_URL) ? myFT.instantAds.Retail_dynamic_clickTag_URL : feedItems[0]['url'];
           //This variable will be passed through clicktag (inside clickEvent handler below) as a parameter
           //myFT.clickTag(1, ctURL);
           //If using dynamic text, set variables values to feed or dynamic variables setup in manifest/versions within instandAd*/
@@ -118,17 +118,14 @@ function animate() {
   .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
   .to(['#h2, #term2'], 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
 
-  // Duration of entire timeline
-  const totalDuration = tl.duration() + 2;
-  // Plane animation running for entire duration
-  tl.fromTo("#cloud", totalDuration, { x: "30" }, { x: "0", ease: Power0.easeNone }, 0);
-  tl.fromTo("#plane", totalDuration, { x: "-100" }, { x: "0", ease: Power0.easeNone }, 0)
-
-  .addLabel('frame_END', "frame2+=4")
+  .addLabel('frame_END', "frame2+=5")
   .to("#term2", {autoAlpha: 0,}, 'frame_END')
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
   .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
-
+  
+  const totalDuration = tl.duration();
+  tl.fromTo("#cloud", totalDuration, { x: "30" }, { x: "0", ease: Power0.easeNone }, 0);
+  tl.fromTo("#plane", totalDuration, { x: "-100" }, { x: "0", ease: Power0.easeNone }, 0)
   //////////////////////////////////////
   // @FT2 code block start
   .call(playEndframe, ["param1"], 'frame_END')

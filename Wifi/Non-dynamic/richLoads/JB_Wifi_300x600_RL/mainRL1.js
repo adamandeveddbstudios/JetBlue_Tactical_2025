@@ -37,7 +37,7 @@ function animate() {
   const totalDuration = tl.duration() + 2;
   // Plane animation running for entire duration
   tl.fromTo("#cloud", totalDuration, { x: "30" }, { x: "0", ease: Power0.easeNone }, 0);
-  tl.fromTo("#plane", totalDuration, { x: "-100" }, { x: "290", ease: Power0.easeNone }, 0);
+   tl.fromTo("#plane", totalDuration, { x: "-100" }, { x: "0", ease: Power0.easeNone }, 0)
 }
 
 function setRollover() {

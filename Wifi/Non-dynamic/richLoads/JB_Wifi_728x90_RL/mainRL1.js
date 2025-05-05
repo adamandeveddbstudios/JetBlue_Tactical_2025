@@ -36,7 +36,7 @@ function animate() {
   const totalDuration = tl.duration() + 2;
 
   tl.fromTo("#cloud", totalDuration, { x: "30" }, { x: "0", ease: Power0.easeNone }, 0);
-  tl.fromTo("#plane", totalDuration, { x: "-50" }, { x: "230", ease: Power0.easeNone }, 0);
+  tl.fromTo("#plane", totalDuration, { x: "-100" }, { x: "0", ease: Power0.easeNone }, 0)
 }
 
 function setRollover() {

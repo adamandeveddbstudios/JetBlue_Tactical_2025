@@ -116,7 +116,7 @@ function animate() {
   .to(['#h2, #term2, #term3'], 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
 
   const totalDuration = tl.duration() + 2;
-  tl.fromTo("#cloud", totalDuration, { x: "50" }, { x: "0", ease: Power0.easeNone }, 0)
+  tl.fromTo("#cloud", totalDuration, { x: "-60" }, { x: "30", ease: Power0.easeNone }, 0)
 
   .addLabel('frame_END', "frame2+=6")
   .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')

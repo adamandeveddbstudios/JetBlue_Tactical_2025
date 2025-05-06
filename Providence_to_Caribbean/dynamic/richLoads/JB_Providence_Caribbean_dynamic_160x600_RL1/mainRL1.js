@@ -118,15 +118,8 @@ function animate() {
   .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
 
-  // Duration of entire timeline
-  const totalDuration = tl.duration() + 2;
-  // Plane animation running for entire duration
-  tl.fromTo("#plane", totalDuration, { x: "-70px" }, { x: "0", ease: Power0.easeNone }, 0)
-
   .addLabel('frame_END', "frame2+=6")
-  .to("#term2", {autoAlpha: 0,}, 'frame_END')
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
-  .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
 
   //////////////////////////////////////
   // @FT2 code block start

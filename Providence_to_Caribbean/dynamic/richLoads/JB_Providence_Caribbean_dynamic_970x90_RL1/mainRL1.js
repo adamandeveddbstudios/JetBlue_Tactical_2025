@@ -116,14 +116,10 @@ function animate() {
   .addLabel('frame2', 'frame1+=4')
   .to('#h1', 0.5, { autoAlpha: 0, y: "20px", ease: Power1.easeOut }, "frame2")
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
-  const totalDuration = tl.duration() + 2;
-  tl.fromTo("#plane", totalDuration, { x: "-300px" }, { x: "0", ease: Power0.easeNone }, 0);
 
   tl.addLabel('frame_END', 'frame2+=6')    
-  
-  .to("#term2", {autoAlpha: 0,}, 'frame_END')
+
   .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
-  .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
 
     ////////////////////////////////////////
     //@FT2 code block start

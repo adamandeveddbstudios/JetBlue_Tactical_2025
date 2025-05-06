@@ -118,7 +118,6 @@ function animate() {
   .to('#h2', 0.5, { autoAlpha: 1, y: "0", ease: Power1.easeOut }, "frame2+=0.5")
 
   tl.addLabel('frame_END', 'frame2+=6')    
-
   .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
 
     ////////////////////////////////////////
